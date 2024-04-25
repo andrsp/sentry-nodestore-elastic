@@ -10,7 +10,7 @@ with open("README.md", "r") as readme:
 
 setup(
     name='sentry-nodestore-elastic',
-    version='1.0.0',
+    version='1.0.1',
     author='andrsp@gmail.com',
     author_email='andrsp@gmail.com',
     url='https://github.com/andrsp/sentry-nodestore-elastic',
