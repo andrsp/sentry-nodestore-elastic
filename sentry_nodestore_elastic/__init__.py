@@ -1,1 +1,1 @@
-from sentry_elastic_nodestore.backend import ElasticNodeStorage
+from sentry_nodestore_elastic.backend import ElasticNodeStorage
