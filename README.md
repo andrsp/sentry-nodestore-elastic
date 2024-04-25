@@ -7,7 +7,9 @@ Sentry nodestore Elasticsearch backend
 Supported Sentry 24.x & elasticsearch 8.x versions
 
 Use Elasticsearch cluster for store node objects from Sentry
+
 By default selfhosted Sentry uses Postgresql database for settings and nodestore, and under high load it becomes a bottleneck, database size growing fast and slowing down entire system
+
 Switching nodestore to dedicated Elasticsearch cluster provides more scalability:
 - Elasticsearch cluster may be scaled horizontally by adding more data nodes (Postgres not)
 - Data in Elasticsearch may be sharded and replicated between data nodes, which increases throughput
@@ -49,7 +51,7 @@ SENTRY_NODESTORE_OPTIONS = {
 
 from sentry.conf.server import *  # default for sentry.conf.py
 INSTALLED_APPS = list(INSTALLED_APPS)
-INSTALLED_APPS.append('sentry-nodestore-elastic')
+INSTALLED_APPS.append('sentry_nodestore_elastic')
 INSTALLED_APPS = tuple(INSTALLED_APPS)
 ```
 
