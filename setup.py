@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 install_requires = [
-    'sentry==24.*',
+    'sentry==25.*',
     'elasticsearch==8.*',
 ]
 
@@ -10,7 +10,7 @@ with open("README.md", "r") as readme:
 
 setup(
     name='sentry-nodestore-elastic',
-    version='1.0.1',
+    version='1.0.2',
     author='andrsp@gmail.com',
     author_email='andrsp@gmail.com',
     url='https://github.com/andrsp/sentry-nodestore-elastic',
@@ -25,7 +25,7 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI App roved :: Apache Software License',
         'Operating System :: POSIX',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
