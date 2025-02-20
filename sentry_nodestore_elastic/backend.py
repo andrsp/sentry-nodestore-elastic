@@ -81,7 +81,9 @@ class ElasticNodeStorage(NodeStorage):
                         }
                     },
                     "aliases": {
-                        self.alias_name: {}
+                        self.alias_name: {
+                            "is_write_index": True
+                        }
                     }
                 }
             )
