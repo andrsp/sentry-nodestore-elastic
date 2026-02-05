@@ -4,7 +4,7 @@ Sentry nodestore Elasticsearch backend
 
 [![image](https://img.shields.io/pypi/v/sentry-nodestore-elastic.svg)](https://pypi.python.org/pypi/sentry-nodestore-elastic)
 
-Supported Sentry 25.x & elasticsearch 8.x versions
+Supported Sentry 26.1.0+ & elasticsearch 8.x versions
 
 Use Elasticsearch cluster for store node objects from Sentry
 
@@ -21,7 +21,7 @@ Switching nodestore to dedicated Elasticsearch cluster provides more scalability
 Rebuild sentry docker image with nodestore package installation
 
 ``` shell
-FROM getsentry/sentry:25.1.0
+FROM getsentry/sentry:26.1.0
 RUN  pip install sentry-nodestore-elastic
 ```
 
@@ -170,7 +170,7 @@ while True:
 
     bulk(es, bulk_data)
     count = count - 2000
-    print(f"Remainig rows: {count}")
+    print(f"Remaining rows: {count}")
 
 cursor.close()
 conn.close()
